@@ -35,10 +35,10 @@ render() {
   />
   <button onClick={this.handleOnChange}>Search</button>
   {this.state.meals ? (
-  <div>
+  <div id = "meals-container">
   {this.state.meals.map((meal, index) => (
-  <div key={index}>
-  <h1>{meal.strMeal}</h1>
+  <div class = "single-meal" key={index}>
+  <h2>{meal.strMeal}</h2>
   <img src={meal.strMealThumb} alt="meal-thumbnail" />
   </div>
   ))}
